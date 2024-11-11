@@ -1,0 +1,15 @@
+::Lenguaje de Marcas:: ¿Cuál de los siguientes es un lenguaje de marcas? { =HTML ~Java ~Python ~C++ }
+
+::Uso de etiquetas en HTML:: En HTML, las etiquetas siempre deben estar cerradas. { TRUE }
+
+::Lenguajes de Marcas Populares:: ¿Cuáles de los siguientes son lenguajes de marcas? { =HTML =XML ~JavaScript ~CSS }
+
+::Emparejamiento de etiquetas:: Empareja las etiquetas HTML con su función correcta. { 
+    =<h1> -> Encabezado 
+    =<p> -> Párrafo 
+    =<a> -> Enlace 
+    =<img> -> Imagen
+}
+
+::Significado de XML:: ¿Qué significa XML? { =Extensible Markup Language }
+
