@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<style>
+    p[name]{
+        background: yellow;
+    }
+    
+    p[name = "p1"]{
+        background: red;
+    }
+
+    p[name ~= "p2"]{
+        background: green;
+    }
+
+    p[name ^= "p3"]{
+        background: grey;
+    }
+
+    p[name $= "p4"]{
+        background: purple;
+    }
+
+    p[name *= "p5"]{
+        background: orange;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Actividad guiada css</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Volver</a></li>
+        </ul>
+    </nav>
+    <p name>p</p>
+    <p name="p1">p1</p>
+    <p name="p2">p2</p>
+    <p name="p3">p3</p>
+    <p name="p4">p4</p>
+    <p name="p5">p5</p>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 4.11</title>
+    <link rel="stylesheet" href="../../../global.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Volver</a></li>
+        </ul>
+    </nav>
+<fieldset>
+    <legend><b>VALORACIÓN SERVICIO</b></legend>
+    <form action="procesar.php" method="get" name="valoracion">
+    Valoración del servicio<select name="valoracion" id="valor" required>
+        <option value="0" disabled selected>--Seleccione--</option>
+        <option value="1">1 Estrellas</option>
+        <option value="2">2 Estrellas</option>
+        <option value="3">3 Estrellas</option>
+        <option value="4">4 Estrellas</option>
+        <option value="5">5 Estrellas</option>
+    </select>
+    <br>
+    Comentario adicional 
+    <br><textarea name="comentario" id="1" cols="50" rows="5"></textarea>
+    <br>
+    
+    Permitir recibir más encuestas<input type="checkbox" class="Sí" name="pregunta" id="si"> Sí
+    <label for="si"></label>
+
+    <input type="checkbox" class="no" name="pregunta" id="no"> No
+    <label for="no"></label>
+    <br>
+    <button type="submit">Enviar</button>
+    </fieldset>
+</form>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 4.8</title>
+    <link rel="stylesheet" href="../../../global.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Volver</a></li>
+        </ul>
+    </nav>
+    <form action="procesar.php" method="get" name="registro_formulario"> 
+        <label for="nombre"> Nombre:<input type="text" name="usuario" placeholder="Usuario" required></label> 
+        <br>
+        <label for="contraseña">Contraseña: <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña" required></label> 
+        <br>
+        <label for="confirmar_contraseña">Confirmar contraseña: <input type="password" name="confirmar_contraseña" id="confirmar_contraseña" pattern=".{8,}" 
+        placeholder="Contraseña" required></label> 
+        <br>
+        <label for="edad">Edad: <input type="number" name="edad" placeholder="Edad" min="18" required></label> 
+        <br>
+        <label for="genero">Género: 
+            <select name="genero"> 
+                <option value="hombre">Hombre</option> 
+                <option value="mujer">Mujer</option> 
+            </select></label> 
+            <br>
+        <button type="submit">Enviar</button>
+    </form>
+
+</form>
+
+</body>
+</html> 
