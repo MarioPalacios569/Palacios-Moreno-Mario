@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Córdoba Ciudad Patrimonio">
+    <meta name="keywords" content="Turismo, patrimonio, viajes">
+    <title>Contacto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #8B0000;
+            color: #fff;
+            padding: 20px 10px;
+            text-align: center;
+        }
+        nav {
+            background: #333;
+            color: #fff;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h2{
+            color: #8B0000;
+        }
+        h1{
+            color: white;
+        }
+        section {
+            margin-bottom: 20px;
+            max-width: 800px;
+            text-align: justify;
+        }
+        aside {
+            margin-top: 20px;
+            padding: 10px;
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            max-width: 800px;
+        }
+        aside h3 {
+            color: #8B0000;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 600px;
+            margin-top: 20px;
+        }
+        form label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: #8B0000;
+        }
+        form input, form textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        form button {
+            background-color: #8B0000;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        form button:hover {
+            background-color: #B22222;
+        }
+        .back-to-top {
+            display: inline-block;
+            background-color: #8B0000;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .back-to-top:hover {
+            background-color: #B22222;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="top"></div>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Volver</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Córdoba Ciudad Patrimonio</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="mezquita.html">La Mezquita</a></li>
+            <li><a href="casco_historico.html">Casco Histórico</a></li>
+            <li><a href="patios.html">Los Patios</a></li>
+            <li><a href="medina_azahara.html">Medina Azahara</a></li>
+            <li><a href="recorrido.html">Recorrido</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Contacto</h2>
+        <section>
+            <article>
+                <p>
+                    Si tiene alguna pregunta o desea obtener más información sobre los lugares emblemáticos de Córdoba,
+                    no dude en ponerse en contacto con nosotros. Complete el siguiente formulario y nos pondremos en contacto con usted a la mayor brevedad posible.
+                </p>
+            </article>
+        </section>
+
+        <form action="#" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <a href="#top" class="back-to-top">Subir al inicio</a>
+
+    <footer>
+        <address>Córdoba, España</address>
+        <small>&copy; Todos los derechos reservados.</small>
+    </footer>
+</body>
+</html>
