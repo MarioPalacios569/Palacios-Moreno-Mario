@@ -1,0 +1,84 @@
+/* Estilo básico */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+p {
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Efecto hover */
+.hover-box {
+    background-color: #28a745;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 8px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.hover-box:hover {
+    transform: scale(1.1);
+    background-color: #218838;
+}
+
+/* Botón con estilo */
+.styled-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.styled-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Caja responsiva */
+.responsive-box {
+    background-color: #ffc107;
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 8px;
+    color: #856404;
+    font-weight: bold;
+}
+
+/* Cambios en dispositivos pequeños */
+@media (max-width: 600px) {
+    .responsive-box {
+        background-color: #f0ad4e;
+        color: #fff;
+    }
+}

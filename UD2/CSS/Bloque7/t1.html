@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de Reglas CSS</title>
+    <style>
+        /* Estilo básico para el botón */
+        .boton {
+            display: inline-block; /* Permite que el botón se comporte como un elemento en línea con bloque */
+            padding: 10px 20px; /* Espaciado interno */
+            font-size: 18px; /* Tamaño del texto */
+            color: white; /* Color del texto */
+            background-color: darkblue; /* Color de fondo */
+            text-decoration: none; /* Elimina subrayado */
+            border-radius: 5px; /* Bordes redondeados */
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Suaviza cambios en color y tamaño */
+        }
+        
+        /* Cambios visuales cuando el cursor pasa sobre el botón (hover) */
+        .boton:hover {
+            background-color: lightblue; /* Cambia el color de fondo */
+            color: black; /* Cambia el color del texto */
+            transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+        }
+        
+        /* Estilo cuando el botón está enfocado (focus) */
+        .boton:focus {
+            outline: 3px solid orange; /* Añade un contorno naranja */
+        }
+
+        /* Animación básica para un elemento cuadrado */
+        .animado {
+            width: 100px; /* Ancho del cuadrado */
+            height: 100px; /* Alto del cuadrado */
+            background-color: crimson; /* Color inicial */
+            margin: 20px auto; /* Centra el cuadrado horizontalmente */
+            animation: girar 3s infinite; /* Aplica la animación "girar" en un bucle infinito */
+        }
+
+        /* Definición de la animación con keyframes */
+        @keyframes girar {
+            0% {
+                transform: rotate(0deg); /* Sin rotación al inicio */
+            }
+            50% {
+                transform: rotate(180deg); /* Rotación de 180 grados */
+                background-color: lightcoral; /* Cambia temporalmente el color */
+            }
+            100% {
+                transform: rotate(360deg); /* Rotación completa de 360 grados */
+                background-color: crimson; /* Vuelve al color inicial */
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index1.html">Volver</a></li>
+        </ul>
+    </nav>
+    <h1 style="text-align: center;">Ejemplos de Reglas CSS</h1>
+    
+    <!-- Ejemplo de botón con hover y focus -->
+    <div style="text-align: center;">
+        <a href="#" class="boton">Botón Interactivo</a>
+    </div>
+    <!-- Explicación: El botón cambia de color y tamaño al pasar el cursor (hover) 
+         y muestra un contorno naranja al estar enfocado (focus). -->
+
+    <!-- Div animado con rotación -->
+    <div class="animado"></div>
+    <!-- Explicación: Este cuadrado realiza una rotación completa de 360 grados en 3 segundos,
+         cambiando de color temporalmente en el punto intermedio de la animación. -->
+</body>
+</html>
