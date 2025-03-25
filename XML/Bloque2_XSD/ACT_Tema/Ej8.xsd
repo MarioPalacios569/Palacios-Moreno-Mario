@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="numero_binario">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="uno" type="unoType" maxOccurs="unbounded"/>
+                <xs:element name="cero" type="ceroType" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Definición del elemento <uno> que solo puede contener '1' -->
+    <xs:simpleType name="unoType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Definición del elemento <cero> que solo puede contener '0' -->
+    <xs:simpleType name="ceroType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="0"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

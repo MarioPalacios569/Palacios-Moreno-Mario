@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<precios xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Ej6.xsd">
+    <temporada_alta>170.25</temporada_alta>
+    <temporada_baja>111.23</temporada_baja>
+    <temporada_media>100.00</temporada_media>
+</precios>

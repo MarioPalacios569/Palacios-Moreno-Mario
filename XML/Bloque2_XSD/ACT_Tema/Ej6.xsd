@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="precios">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="temporada_alta" type="precioType"/>
+                <xs:element name="temporada_baja" type="precioType"/>
+                <xs:element name="temporada_media" type="precioType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Tipo restringido para los precios -->
+    <xs:simpleType name="precioType">
+        <xs:restriction base="xs:decimal">
+            <xs:totalDigits value="5"/>  <!-- Máximo 5 dígitos en total -->
+            <xs:fractionDigits value="2"/>  <!-- Máximo 2 decimales -->
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

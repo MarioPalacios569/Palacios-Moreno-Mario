@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="datos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="persona" maxOccurs="unbounded">
+                    <xs:complexType mixed="true">
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string"/>
+                            <xs:element name="apellido" type="xs:string"/>
+                            <xs:element name="DNI" type="xs:string"/>
+                            <xs:element name="comentario" type="xs:string"/>
+                            <xs:element name="pago">
+                                <xs:complexType mixed="true">
+                                    <xs:sequence>
+                                        <xs:element name="numero" type="xs:string" />  
+                                    </xs:sequence>
+                                    <xs:attribute name="tipo" type="xs:string" use="required"/>  
+                                </xs:complexType>
+                            </xs:element>
+                           <xs:element name="nota" maxOccurs="unbounded">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:int">
+                                        <xs:minInclusive value="0"/>
+                                        <xs:maxInclusive value="10"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:integer" use="required"/>
+                        <xs:attribute name="fechanac" type="xs:date" use="optional"/>
+                    </xs:complexType>
+                </xs:element>  
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

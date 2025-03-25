@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE logs [
+<!ELEMENT logs (log*) >
+<!ELEMENT log (date*, message, Archivo)>
+<!ELEMENT date (#PCDATA) >
+<!ELEMENT message (#PCDATA) >
+<!ELEMENT Archivo (#PCDATA) >
+<!ATTLIST log id CDATA #REQUIRED >
+<!ATTLIST log type CDATA #REQUIRED >
+]>
+
+<logs>
+    <log id="uno" type= "Error I">
+        <date>2020-01-01</date>
+        <message>Test message 1</message>
+        <Archivo>test1.txt</Archivo>
+    </log>
+    <log id="dos" type="Erro W">
+        <message>mensaje 2</message>
+        <Archivo>Archivo2.txt</Archivo>
+    </log>
+</logs>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<numero_binario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Ej8.xsd">
+    <uno>1</uno>
+    <uno>1</uno>
+    <cero>0</cero>
+</numero_binario>

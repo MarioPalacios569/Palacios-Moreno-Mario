@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Ej5.xsd">
+    <persona id="1" fechanac="1990-01-01">
+        <nombre>Fernando</nombre>
+        <apellido>Lopez</apellido>
+        <DNI>5673893L</DNI>
+        <comentario>Breve descripción de la persona</comentario>
+        <pago tipo="tarjeta">
+            <numero>1234567890123456</numero>
+        </pago>
+        <nota>7</nota>
+    </persona>
+
+    <persona id="2">
+        <nombre>Maria</nombre>
+        <apellido>Gomez</apellido>
+        <DNI>9876543P</DNI>
+        <comentario>Otra descripción</comentario>
+        <pago tipo="transferencia">
+            <numero>ES9121000418450200051332</numero>
+        </pago>
+        <nota>10</nota>
+    </persona>
+</datos>

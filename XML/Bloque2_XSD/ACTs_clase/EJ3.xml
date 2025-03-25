@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<personas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="EJ3.xsd">
+  <persona>
+    <nombre>Juan Pérez</nombre>
+    <edad>30</edad>
+    <pais>España</pais>
+    <telefono>123456789</telefono>
+    <direccion>
+      <calle>Calle Mayor</calle>
+      <ciudad>Madrid</ciudad>
+      <codigoPostal>28001</codigoPostal>
+    </direccion>
+  </persona>
+  <persona>
+    <nombre>Maria García</nombre>
+    <edad>25</edad>
+    <pais>Francia</pais>
+    <telefono>987654321</telefono>
+    <direccion>
+      <calle>Rue de la Paix</calle>
+      <ciudad>París</ciudad>
+      <codigoPostal>75001</codigoPostal>
+    </direccion>
+  </persona>
+</personas>

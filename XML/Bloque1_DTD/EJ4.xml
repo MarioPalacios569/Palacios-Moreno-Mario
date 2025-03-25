@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE etiqueta [
+<!ELEMENT etiqueta (nombre, Calle, ciudad, Pais, codigo)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT Calle (#PCDATA)>
+<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT Pais (#PCDATA)>
+<!ELEMENT codigo (#PCDATA)>
+]>
+
+<etiqueta>
+    <nombre>Pepe Garcia</nombre>
+    <Calle>fray digo de cadiz</Calle>
+    <ciudad>Granada</ciudad>
+    <Pais>espana</Pais>
+    <codigo>18001</codigo>
+</etiqueta>

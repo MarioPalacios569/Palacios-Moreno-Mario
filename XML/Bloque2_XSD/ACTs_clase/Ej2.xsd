@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+
+  <xs:complexType name="personaType">
+    <xs:attributeGroup ref="personaAttributes"/>
+  </xs:complexType>
+
+  <xs:attributeGroup name="personaAttributes">
+    <xs:attribute name="nombre" type="xs:string"/>
+    <xs:attribute name="edad" type="xs:integer"/>
+    <xs:attribute name="pais" type="xs:string"/>
+  </xs:attributeGroup>
+
+  <xs:element name="personas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="persona" type="personaType" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

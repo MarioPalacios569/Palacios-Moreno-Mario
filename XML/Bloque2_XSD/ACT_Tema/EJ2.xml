@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<estado xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Ej2.xsd">
+  <puertaCerrada/>
+  <ventanaAbierta>verdadero</ventanaAbierta>
+</estado>

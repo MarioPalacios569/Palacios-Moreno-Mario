@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE deportistas[
+    <!ELEMENT deportistas (deportista*)>
+    <!ELEMENT deportista (deporte, nombre)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT deporte (#PCDATA)>
+
+]>
+<deportistas>
+    <deportista>
+        <deporte>Atletismo</deporte>
+        <nombre>Jesse Owens</nombre>
+    </deportista>
+    <deportista>
+        <deporte>Natación</deporte>
+        <nombre>Michael Phelps</nombre>
+    </deportista>
+</deportistas>

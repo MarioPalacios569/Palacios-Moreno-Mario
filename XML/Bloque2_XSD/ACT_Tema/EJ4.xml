@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<datos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Ej4.xsd">
+    <persona id="1" fechanac="1990-01-01">
+        <nombre>Fernando</nombre>
+        <apellido>Lopez</apellido>
+        <DNI>5673893L</DNI>
+        <comentario>Breve descripción de la persona</comentario>
+    </persona>
+</datos>
